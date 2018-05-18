@@ -237,6 +237,10 @@
     <Compile Include="Migrations\201805181641410_AddBirthDateColumnToCustomerModel.Designer.cs">
       <DependentUpon>201805181641410_AddBirthDateColumnToCustomerModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805181707094_UpdateProductModelWithNewColumns.cs" />
+    <Compile Include="Migrations\201805181707094_UpdateProductModelWithNewColumns.Designer.cs">
+      <DependentUpon>201805181707094_UpdateProductModelWithNewColumns.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -245,6 +249,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductCategory.cs" />
+    <Compile Include="Models\ProductGenre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\IndexProductViewModel.cs" />
@@ -360,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805181641410_AddBirthDateColumnToCustomerModel.resx">
       <DependentUpon>201805181641410_AddBirthDateColumnToCustomerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805181707094_UpdateProductModelWithNewColumns.resx">
+      <DependentUpon>201805181707094_UpdateProductModelWithNewColumns.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

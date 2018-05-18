@@ -20,7 +20,10 @@ namespace LibraryMgmtApp.Models
 
         [Required(ErrorMessage = "This field is mandatory")]
         public ProductCategory Category { get; set; }
+        public ProductGenre Genre { get; set; }
 
-        public int ReleaseYear { get; set; }
+        public DateTime ReleaseDate { get; set; }
+        public DateTime DateAdded { get; set; }
+        public int NumberInStock { get; set; }
     }
 }
