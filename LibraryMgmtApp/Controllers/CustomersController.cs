@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data.Entity;
 using System.Web;
 using System.Web.Mvc;
 using LibraryMgmtApp.Models;
@@ -25,7 +26,7 @@ namespace LibraryMgmtApp.Controllers
         public ActionResult Index()
         {
             //get all customers in the database
-            var customers = _context.Customers.ToList();
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
             if(customers == null) { return HttpNotFound(); }
 
