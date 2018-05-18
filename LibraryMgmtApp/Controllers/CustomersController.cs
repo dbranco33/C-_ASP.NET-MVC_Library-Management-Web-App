@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Web;
 using System.Web.Mvc;
 using LibraryMgmtApp.Models;
+using LibraryMgmtApp.ViewModels;
 
 namespace LibraryMgmtApp.Controllers
 {
@@ -45,7 +46,13 @@ namespace LibraryMgmtApp.Controllers
 
         public ActionResult New()
         {
-            return View();
+            var membershipTypes = _context.MembershipTypes.ToList();
+            var viewModel = new NewCustomerViewModel
+            {
+                MembershipTypes = membershipTypes
+            };
+
+            return View(viewModel);
         }
     }
 }

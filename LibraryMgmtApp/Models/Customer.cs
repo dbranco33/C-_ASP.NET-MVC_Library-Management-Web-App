@@ -19,6 +19,7 @@ namespace LibraryMgmtApp.Models
 
         public MembershipType MembershipType { get; set; }
 
+        [Display(Name = "Type of Membership")]
         public byte MembershipTypeId { get; set; }
 
         [Display(Name = "Date of Birth")]
