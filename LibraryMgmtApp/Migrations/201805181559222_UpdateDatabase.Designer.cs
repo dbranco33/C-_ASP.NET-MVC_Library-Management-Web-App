@@ -7,13 +7,13 @@ namespace LibraryMgmtApp.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddProductCategoryModel1 : IMigrationMetadata
+    public sealed partial class UpdateDatabase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddProductCategoryModel1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateDatabase));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805181444331_AddProductCategoryModel1"; }
+            get { return "201805181559222_UpdateDatabase"; }
         }
         
         string IMigrationMetadata.Source

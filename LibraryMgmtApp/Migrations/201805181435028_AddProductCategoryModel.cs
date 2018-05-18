@@ -8,7 +8,7 @@ namespace LibraryMgmtApp.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.ProductCategory",
+                "dbo.ProductCategories",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),

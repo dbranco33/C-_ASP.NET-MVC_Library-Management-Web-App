@@ -7,13 +7,13 @@ namespace LibraryMgmtApp.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class UpdateProductCategoryModel : IMigrationMetadata
+    public sealed partial class AddBirthDateColumnToCustomerModel : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateProductCategoryModel));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddBirthDateColumnToCustomerModel));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805181518009_UpdateProductCategoryModel"; }
+            get { return "201805181641410_AddBirthDateColumnToCustomerModel"; }
         }
         
         string IMigrationMetadata.Source

@@ -3,16 +3,16 @@ namespace LibraryMgmtApp.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class UpdateProductCategoryModel : DbMigration
+    public partial class AddBirthDateColumnToCustomerModel : DbMigration
     {
         public override void Up()
         {
-            DropColumn("dbo.Products", "CategoryId");
+            AddColumn("dbo.Customers", "BirthDate", c => c.DateTime());
         }
         
         public override void Down()
         {
-            AddColumn("dbo.Products", "CategoryId", c => c.Byte(nullable: false));
+            DropColumn("dbo.Customers", "BirthDate");
         }
     }
 }

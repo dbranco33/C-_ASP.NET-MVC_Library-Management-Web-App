@@ -3,16 +3,16 @@ namespace LibraryMgmtApp.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AddProductCategoryModel1 : DbMigration
+    public partial class UpdateDatabase : DbMigration
     {
         public override void Up()
         {
-            AddColumn("dbo.Products", "CategoryId", c => c.Byte(nullable: false));
+            DropColumn("dbo.Products", "CategoryId");
         }
         
         public override void Down()
         {
-            DropColumn("dbo.Products", "CategoryId");
+            AddColumn("dbo.Products", "CategoryId", c => c.Byte(nullable: false));
         }
     }
 }

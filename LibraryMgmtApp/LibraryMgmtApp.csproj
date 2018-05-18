@@ -229,13 +229,13 @@
     <Compile Include="Migrations\201805181435028_AddProductCategoryModel.Designer.cs">
       <DependentUpon>201805181435028_AddProductCategoryModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805181444331_AddProductCategoryModel1.cs" />
-    <Compile Include="Migrations\201805181444331_AddProductCategoryModel1.Designer.cs">
-      <DependentUpon>201805181444331_AddProductCategoryModel1.cs</DependentUpon>
+    <Compile Include="Migrations\201805181559222_UpdateDatabase.cs" />
+    <Compile Include="Migrations\201805181559222_UpdateDatabase.Designer.cs">
+      <DependentUpon>201805181559222_UpdateDatabase.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805181518009_UpdateProductCategoryModel.cs" />
-    <Compile Include="Migrations\201805181518009_UpdateProductCategoryModel.Designer.cs">
-      <DependentUpon>201805181518009_UpdateProductCategoryModel.cs</DependentUpon>
+    <Compile Include="Migrations\201805181641410_AddBirthDateColumnToCustomerModel.cs" />
+    <Compile Include="Migrations\201805181641410_AddBirthDateColumnToCustomerModel.Designer.cs">
+      <DependentUpon>201805181641410_AddBirthDateColumnToCustomerModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -355,11 +355,11 @@
     <EmbeddedResource Include="Migrations\201805181435028_AddProductCategoryModel.resx">
       <DependentUpon>201805181435028_AddProductCategoryModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805181444331_AddProductCategoryModel1.resx">
-      <DependentUpon>201805181444331_AddProductCategoryModel1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805181559222_UpdateDatabase.resx">
+      <DependentUpon>201805181559222_UpdateDatabase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805181518009_UpdateProductCategoryModel.resx">
-      <DependentUpon>201805181518009_UpdateProductCategoryModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805181641410_AddBirthDateColumnToCustomerModel.resx">
+      <DependentUpon>201805181641410_AddBirthDateColumnToCustomerModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
