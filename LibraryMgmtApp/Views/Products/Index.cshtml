@@ -18,7 +18,8 @@ else
                 <th>Name</th>
                 <th>Author</th>
                 <th>Category</th>
-                <th>Year Released</th>
+                <th>Genre</th>
+                <th>Date Released</th>
             </tr>
         </thead>
         <tbody>
@@ -28,7 +29,8 @@ else
                     <td>@Html.ActionLink(product.Name, "Details", "Products", new { id = product.Id }, null)</td>
                     <td>@product.Author</td>
                     <td>@product.Category.Name</td>
-                    <td>@product.ReleaseYear.ToString()</td>
+                    <td>@product.Genre.Name</td>
+                    <td>@product.ReleaseDate.ToLongDateString()</td>
                 </tr>
             }
         </tbody>

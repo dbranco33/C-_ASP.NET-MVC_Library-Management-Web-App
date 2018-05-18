@@ -26,7 +26,17 @@ namespace LibraryMgmtApp.Controllers
         // GET: Products
         public ActionResult Index(string sortBy)
         {
-            var products = _context.Products.Include(p => p.Category).ToList();
+            var products = _context.Products.Include(p => p.Category).Include(p => p.Genre).ToList();
+
+            if (products == null) { return HttpNotFound(); }
+
+            return View(products);
+        }
+
+        public ActionResult Details(int id)
+        {
+            //get all products in the database
+            var products = _context.Products.Include(p=> p.Category).Include(p => p.Genre).SingleOrDefault(p => p.Id == id);
 
             if (products == null) { return HttpNotFound(); }
 
