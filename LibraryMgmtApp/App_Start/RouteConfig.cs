@@ -13,6 +13,9 @@ namespace LibraryMgmtApp
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //enables attribute routing
+            routes.MapMvcAttributeRoutes();
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
