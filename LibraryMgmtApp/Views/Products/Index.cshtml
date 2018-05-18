@@ -1,5 +1,4 @@
-﻿@model LibraryMgmtApp.Models.Product
-
+﻿@model LibraryMgmtApp.ViewModels.IndexProductViewModel
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,5 +6,19 @@
 
 <h2>All Products.</h2>
 
-<p>@Model.Name</p>
+<h1>@Model.Product.Name</h1>
+
+@if (Model.Customers.Count == 0)
+{
+    <text>No one has rented this @Model.Product.Category before.</text>
+}
+else
+{
+    <ul>
+        @foreach (var cust in Model.Customers)
+        {
+            <li>@cust.Name</li>
+        }
+    </ul>
+}
 
