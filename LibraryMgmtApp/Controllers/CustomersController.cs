@@ -42,5 +42,10 @@ namespace LibraryMgmtApp.Controllers
 
             return View(customers);
         }
+
+        public ActionResult New()
+        {
+            return View();
+        }
     }
 }
