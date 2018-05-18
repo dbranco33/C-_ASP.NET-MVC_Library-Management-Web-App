@@ -225,14 +225,22 @@
     <Compile Include="Migrations\201805181401440_UpdatingCustomerTable.Designer.cs">
       <DependentUpon>201805181401440_UpdatingCustomerTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805181435028_AddProductCategoryModel.cs" />
+    <Compile Include="Migrations\201805181435028_AddProductCategoryModel.Designer.cs">
+      <DependentUpon>201805181435028_AddProductCategoryModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805181444331_AddProductCategoryModel1.cs" />
+    <Compile Include="Migrations\201805181444331_AddProductCategoryModel1.Designer.cs">
+      <DependentUpon>201805181444331_AddProductCategoryModel1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\BusinessRules\BusinessRules.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\IndexProductViewModel.cs" />
@@ -338,6 +346,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805181401440_UpdatingCustomerTable.resx">
       <DependentUpon>201805181401440_UpdatingCustomerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805181435028_AddProductCategoryModel.resx">
+      <DependentUpon>201805181435028_AddProductCategoryModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805181444331_AddProductCategoryModel1.resx">
+      <DependentUpon>201805181444331_AddProductCategoryModel1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

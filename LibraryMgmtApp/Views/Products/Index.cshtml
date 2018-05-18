@@ -1,24 +1,40 @@
-﻿@model LibraryMgmtApp.ViewModels.IndexProductViewModel
+﻿@model IEnumerable<LibraryMgmtApp.Models.Product>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>All Products.</h2>
-
-<h1>@Model.Product.Name</h1>
-
-@if (Model.Customers.Count == 0)
+<h2>All Customers.</h2>
+@if (!Model.Any())
 {
-    <text>No one has rented this @Model.Product.Category before.</text>
+    <p>We don't have any product yet.</p>
 }
 else
 {
-<ul>
-    @foreach (var cust in Model.Customers)
-    {
-        <li>@cust.Name</li>
-    }
-</ul>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Year Released</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(product.Name, "Details", "Customers", new { id = product.Id }, null)</td>
+                    <td>@product.Name</td>
+                    <td>@product.Author</td>
+                    <td>@product.Category.Name</td>
+                    <td>@product.ReleaseYear.ToString()</td>
+                    <td></td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
 
