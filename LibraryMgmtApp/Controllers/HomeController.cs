@@ -22,7 +22,7 @@ namespace LibraryMgmtApp.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Daniel Lopes Branco";
 
             return View();
         }
