@@ -217,6 +217,10 @@
     <Compile Include="Migrations\201805181225453_UpdatingCustomerAndProduct.Designer.cs">
       <DependentUpon>201805181225453_UpdatingCustomerAndProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805181329351_AddingColumnNameToMembershipType.cs" />
+    <Compile Include="Migrations\201805181329351_AddingColumnNameToMembershipType.Designer.cs">
+      <DependentUpon>201805181329351_AddingColumnNameToMembershipType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BusinessRules\BusinessRules.cs" />
@@ -324,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805181225453_UpdatingCustomerAndProduct.resx">
       <DependentUpon>201805181225453_UpdatingCustomerAndProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805181329351_AddingColumnNameToMembershipType.resx">
+      <DependentUpon>201805181329351_AddingColumnNameToMembershipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
