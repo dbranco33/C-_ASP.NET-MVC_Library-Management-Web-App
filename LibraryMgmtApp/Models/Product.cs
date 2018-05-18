@@ -20,7 +20,6 @@ namespace LibraryMgmtApp.Models
 
         [Required(ErrorMessage = "This field is mandatory")]
         public ProductCategory Category { get; set; }
-        public byte CategoryId {get; set;}
 
         public int ReleaseYear { get; set; }
     }

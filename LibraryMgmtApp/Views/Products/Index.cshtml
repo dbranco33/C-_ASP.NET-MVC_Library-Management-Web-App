@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>All Customers.</h2>
+<h2>All Products.</h2>
 @if (!Model.Any())
 {
     <p>We don't have any product yet.</p>
@@ -15,7 +15,6 @@ else
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th>Product</th>
                 <th>Name</th>
                 <th>Author</th>
                 <th>Category</th>
@@ -26,12 +25,10 @@ else
             @foreach (var product in Model)
             {
                 <tr>
-                    <td>@Html.ActionLink(product.Name, "Details", "Customers", new { id = product.Id }, null)</td>
-                    <td>@product.Name</td>
+                    <td>@Html.ActionLink(product.Name, "Details", "Products", new { id = product.Id }, null)</td>
                     <td>@product.Author</td>
                     <td>@product.Category.Name</td>
                     <td>@product.ReleaseYear.ToString()</td>
-                    <td></td>
                 </tr>
             }
         </tbody>

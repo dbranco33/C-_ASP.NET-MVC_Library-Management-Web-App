@@ -8,7 +8,7 @@ namespace LibraryMgmtApp.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.ProductCategories",
+                "dbo.ProductCategory",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -25,7 +25,7 @@ namespace LibraryMgmtApp.Migrations
         public override void Down()
         {
             AddColumn("dbo.Products", "Category", c => c.Int(nullable: false));
-            DropForeignKey("dbo.Products", "Category_Id", "dbo.ProductCategories");
+            DropForeignKey("dbo.Products", "Category_Id", "dbo.ProductCategory");
             DropIndex("dbo.Products", new[] { "Category_Id" });
             DropColumn("dbo.Products", "Category_Id");
             DropTable("dbo.ProductCategories");
