@@ -8,6 +8,7 @@ namespace LibraryMgmtApp.Models
 {
     public class Customer
     {
+        [Key]
         public int Id { get; set; }
 
         [StringLength(255)]
