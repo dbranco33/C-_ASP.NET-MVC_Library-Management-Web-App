@@ -1,14 +1,18 @@
 ﻿@model LibraryMgmtApp.ViewModels.CustomerFormViewModel
 @{
-    ViewBag.Title = "New";
+    ViewBag.Title = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @{ 
     var heading = "Edit Customer";
 
-    if(Model.Customer == null) { heading = "New Customer";  }
+    if(Model.Customer == null) {
+        ViewBag.Title = "New";
+        heading = "New Customer";
+    }
 }
+
 <h2>@heading</h2>
 
 @using (Html.BeginForm("Save", "Customers"))
@@ -33,6 +37,10 @@
     @Html.HiddenFor(m => m.Customer.Id);
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Save</button>
+        <button type="reset" class="btn btn-primary">Clear Form</button>
+        <p id="cancelButton" class="btn btn-danger">
+            @Html.ActionLink("Cancel", "Index", "Customers", null, new { @class = "hyperlink-button" })
+        </p>
     </div>
 }
 

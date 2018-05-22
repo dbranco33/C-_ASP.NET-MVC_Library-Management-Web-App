@@ -6,12 +6,18 @@
 }
 
 <h2>All Customers.</h2>
+
+<p id="newCustomerButton" class="btn btn-primary">
+    @Html.ActionLink("New Customer", "New", "Customers", null, new { @class = "hyperlink-button" })
+</p>
+
 @if (!Model.Any())
 {
     <p>We don't have any customers yet.</p>
 }
 else
 {
+    <br/>
     <table class="table table-bordered table-hover">
         <thead>
             <tr>

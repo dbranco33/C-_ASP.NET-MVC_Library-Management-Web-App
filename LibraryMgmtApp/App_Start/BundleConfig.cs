@@ -26,6 +26,7 @@ namespace LibraryMgmtApp
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       //"~/Content/bootstrap.css",
                       "~/Content/bootstrap-lumen.css",
+                      "~/Content/myStyle.css",
                       "~/Content/site.css"));
         }
     }
